@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questionnaire</title>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+      <p>I'd like to get to know you!</p>
+      <p>This is just a quick questionnaire to help me do that:</p>
+      <p></p>
+      <ol>
+        <li>What is your name?</li>
+        <li>How old are you?</li>
+        <li>Where are you from?</li>
+        <li>Are you a football fan?</li>
+      <ol>
+    <script>
+    var userName = prompt('What is your name?');
+    console.log('Hello, ' + userName + '!');
+
+    var userAge = prompt('How old are you?');
+    parseInt(userAge);
+    var yearBorn = 2016 - userAge;
+    console.log('Oh, you were born in ' + yearBorn + '.');
+
+    var userFrom = prompt('Where are you from?');
+    console.log('I hear ' + userFrom + ' is a beautiful place!');
+
+    var userFan = confirm('Are you a football fan, ' + userName + '?');
+    if (userFan === true) {
+      console.log('Football is a great team sport!');
+    } else {
+      console.log('Cool! I am not a fan either!');
+    }
+    </script>
+  </body>
+</html>
